@@ -1,0 +1,319 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.btn-reviews-green {
+  padding: 8px 16px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.name-orders-link > div > h3 {
+  font-weight: 400;
+}
+
+.menu-cab-wrp-link > div > p, .menu-cab-wrp-link > p, .menu-cab-menu-cab, .btn-reviews-green, .wrp-reviews {
+  font-family: "Roboto", sans-serif;
+}
+
+.menu-cab-wrp {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name-orders-img-wrp, .menu-cab-img {
+  margin-right: 22px;
+}
+
+.name-orders-link > div > h3, .menu-cab-wrp-link > div > p, .menu-cab-wrp-link > p {
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.name-orders-link {
+  padding-left: 14px;
+}
+
+.name-orders-link, .menu-cab-wrp-link, .menu-cab-like-wrp, .reviews-product-wrp, .wrp-bonus-reviews, .wrp-answer-reviews {
+  display: flex;
+  align-items: center;
+}
+
+.menu-cab-wrp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.img-svg {
+  opacity: 1;
+}
+
+.img-svg svg {
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: 0 none;
+  background-color: transparent;
+  scroll-behavior: smooth;
+}
+
+/* Убираем внутренние отступы */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-size: 14px;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul,
+ol {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  cursor: pointer;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+input,
+textarea {
+  outline: none;
+  transition: 0.2s;
+}
+
+label {
+  cursor: pointer;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.menu-orders-wrp {
+  width: 280px;
+}
+
+.menu-cab-wrp {
+  width: 100%;
+  max-width: 1440px;
+  padding-top: 16px;
+  align-items: flex-start;
+}
+
+.name-orders {
+  margin-bottom: 28px;
+}
+
+.name-orders-img {
+  width: 46px;
+  height: 46px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+}
+
+.name-orders-link {
+  min-height: 72px;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  color: #363636;
+  border-radius: 8px;
+}
+
+.name-orders-link:hover {
+  color: #009b44;
+}
+
+.name-orders-link > div > h3 {
+  margin-bottom: 8px;
+}
+
+.name-orders-link > div > p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #8a8a8a;
+}
+
+.menu-cab-like-pos {
+  justify-content: space-between;
+}
+
+.menu-cab-wrp-link:hover {
+  color: #009b44;
+}
+
+.menu-cab-user {
+  padding: 10px 14px;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column-reverse;
+  box-sizing: border-box;
+}
+
+.menu-cab-text-wrp + .menu-cab-text-wrp {
+  margin-bottom: 24px;
+}
+
+.menu-cab-line {
+  padding-top: 10px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.menu-cab-menu-cab {
+  min-width: 24px;
+  height: 24px;
+  padding: 2px 7px;
+  background-color: #009b44;
+  border-radius: 34px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.btn-reviews-green {
+  height: 40px;
+  border: 1px solid #009b44;
+  color: #009b44;
+  font-size: 18px;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+.wrp-reviews {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.reviews-wrp-titlr {
+  padding: 10px 0 0 24px;
+  font-family: "Roboto", sans-serif;
+  color: #363636;
+}
+
+.reviews-icon-mob-wrp > img {
+  display: none;
+}
+
+.reviews-icon-mob-wrp {
+  margin-bottom: 24px;
+}
+
+.reviews-list-wrp {
+  margin-bottom: 24px;
+  width: 1107px;
+  padding: 24px 14px;
+  position: relative;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.menu-cab-menu-cab,
+.wrp-bonus-reviews > img,
+.reviews-product-wrp > img {
+  margin-right: 16px;
+}
+
+.reviews-product-wrp > p {
+  max-width: 220px;
+}
+
+.wrp-answer-reviews {
+  margin-right: 37px;
+}
+
+.wrp-bonus-reviews {
+  margin-right: 63px;
+}
+
+.wrp-bonus-reviews > p {
+  max-width: 198px;
+}
+
+.wrp-revires-btn {
+  display: flex;
+}
+
+.menu-cab-line-reviews {
+  border-bottom: 1px solid #d1d1d1;
+  margin-bottom: 9px;
+}

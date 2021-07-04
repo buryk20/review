@@ -1,0 +1,72 @@
+// @import "_main_variable_gv_orders.scss";
+
+.btn-reviews-green {
+    @include btnGreen;
+}
+
+.wrp-reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @extend %text-main;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.reviews-wrp-titlr {
+    @include wrpTitle;
+}
+
+.reviews-icon-mob-wrp > img {
+    display: none;
+}
+
+.reviews-icon-mob-wrp {
+    margin-bottom: 24px;
+}
+
+.reviews-list-wrp {
+    margin-bottom: 24px;
+    @include wrpGeneral;
+}
+
+.reviews-product-wrp {
+    @extend %pos-left-flex;
+}
+.menu-cab-menu-cab,
+.wrp-bonus-reviews > img,
+.reviews-product-wrp > img {
+    margin-right: 16px;
+}
+
+.reviews-product-wrp > p {
+    max-width: 220px;
+}
+
+.wrp-bonus-reviews {
+    @extend %pos-left-flex;
+}
+
+.wrp-answer-reviews {
+    @extend %pos-left-flex;
+}
+
+.wrp-answer-reviews {
+    margin-right: 37px;
+}
+
+.wrp-bonus-reviews {
+    margin-right: 63px;
+}
+
+.wrp-bonus-reviews > p {
+    max-width: 198px;
+}
+
+.wrp-revires-btn {
+    display: flex;
+}
+
+.menu-cab-line-reviews {
+    @include lineMyOrder;
+}

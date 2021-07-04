@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.banner-info-br h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+article.fluid-banner-br {
+  position: relative;
+  max-height: 750px;
+  display: flex;
+  justify-content: center;
+}
+
+.col-lg-12-br {
+  position: relative;
+  width: 100%;
+}
+
+.col-lg-10-br {
+  width: 100%;
+}
+
+.img-wrapper-br {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+section.banner-info-wrap-br {
+  max-width: 1400px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+div.banner-info-br {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1em;
+}
