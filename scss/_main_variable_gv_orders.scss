@@ -169,3 +169,16 @@ $border-radius: 8px;
   border-bottom: $border-grey;
   margin-bottom: 9px;
 }
+
+@mixin numberCounter {
+  min-width: 24px;
+  height: 24px;
+  padding: 2px 7px;
+  @extend %text-main;
+  background-color: $color-main;
+  border-radius: 34px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}

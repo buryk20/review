@@ -40,6 +40,7 @@ body {
 }
 
 .reviews-product-wrp {
+  position: relative;
   @extend %pos-left-flex;
 }
 .menu-cab-menu-cab,
@@ -80,6 +81,14 @@ body {
   @include lineMyOrder;
 }
 
+.number-counter {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -5px;
+  @include numberCounter;
+}
+
 //мобильная версия
 
 @media (max-width: 1427px) {
@@ -115,13 +124,20 @@ body {
     font-weight: 600;
   }
   .wrp-bonus-reviews {
-    margin-right: 15px;
+    margin-right: 11px;
   }
 }
 
 @media (max-width: 1220px) {
+  .wrp-answer-reviews {
+    display: none;
+  }
+  .number-counter {
+    display: block;
+  }
   .reviews-list-wrp {
-    width: 375px;
+    width: 345px;
+    padding: 14px 14px;
   }
   .wrp-reviews {
     flex-direction: column;
@@ -145,7 +161,7 @@ body {
     font-size: 16px;
   }
   .reviews-wrp-title {
-    padding: 0 24px;
+    padding: 0 15px;
   }
 }
 
