@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .btn-reviews-green {
   padding: 8px 16px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 6px;
   font-size: 18px;
 }
@@ -34,14 +35,24 @@
 }
 
 .name-orders-link, .menu-cab-wrp-link, .menu-cab-like-wrp, .reviews-product-wrp, .wrp-bonus-reviews, .wrp-answer-reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-cab-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 html,
@@ -67,7 +78,8 @@ body {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 0 none;
   background-color: transparent;
   scroll-behavior: smooth;
@@ -146,6 +158,7 @@ select {
 input,
 textarea {
   outline: none;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -156,9 +169,12 @@ label {
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
@@ -171,7 +187,9 @@ label {
   width: 100%;
   max-width: 1440px;
   padding-top: 16px;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .name-orders {
@@ -187,7 +205,8 @@ label {
 
 .name-orders-link {
   min-height: 72px;
-  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
   font-family: "Roboto", sans-serif;
   color: #363636;
   border-radius: 8px;
@@ -208,7 +227,9 @@ label {
 }
 
 .menu-cab-like-pos {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu-cab-wrp-link:hover {
@@ -217,11 +238,18 @@ label {
 
 .menu-cab-user {
   padding: 10px 14px;
-  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column-reverse;
-  box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .menu-cab-text-wrp + .menu-cab-text-wrp {
@@ -255,14 +283,21 @@ body {
   border: 1px solid #009b44;
   color: #009b44;
   font-size: 18px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-weight: 400;
 }
 
 .wrp-reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-weight: 600;
   font-size: 16px;
 }
@@ -283,8 +318,12 @@ body {
 }
 
 .reviews-icon-mob-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .reviews-list-wrp {
@@ -292,9 +331,11 @@ body {
   width: 1107px;
   padding: 24px 14px;
   position: relative;
-  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .reviews-product-wrp {
@@ -324,6 +365,8 @@ body {
 }
 
 .wrp-revires-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -394,16 +437,19 @@ body {
   }
   .reviews-list-wrp {
     width: 345px;
-    padding: 14px 14px;
+    padding: 14px 9px;
   }
   .wrp-reviews {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .wrp-revires-btn {
     margin-bottom: 16px;
   }
   .btn-reviews-green {
-    padding: 8px 10px;
+    padding: 10px 10px;
   }
   .wrp-bonus-reviews > p {
     width: 97px;
@@ -427,3 +473,4 @@ body {
     display: none;
   }
 }
+/*# sourceMappingURL=main.css.map */
