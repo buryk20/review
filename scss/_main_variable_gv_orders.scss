@@ -160,10 +160,13 @@ $border-radius: 8px;
   width: 1107px;
   padding: 24px 14px;
   position: relative;
+} 
+
+@mixin wrpCont {
   box-shadow: $block-shadow;
   border-radius: $border-radius;
   box-sizing: border-box;
-} 
+}
 
 @mixin lineMyOrder {
   border-bottom: $border-grey;

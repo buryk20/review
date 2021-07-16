@@ -39,7 +39,15 @@ body {
   @include wrpGeneral;
 }
 
+.wrp-cont {
+  margin-bottom: 10px;
+  padding-right: 14px;
+  // padding-left: 28px;
+  @include wrpCont;
+}
+
 .reviews-product-wrp {
+  padding-left: 24px;
   position: relative;
   @extend %pos-left-flex;
 }
@@ -54,7 +62,14 @@ body {
 }
 
 .wrp-bonus-reviews {
+  position: relative;
   @extend %pos-left-flex;
+}
+
+.wrp-bonus-reviews > img {
+  position: absolute;
+  top: 0;
+  left: -2px;
 }
 
 .wrp-answer-reviews {
@@ -84,8 +99,8 @@ body {
 .number-counter {
   display: none;
   position: absolute;
-  top: 0;
-  left: -5px;
+  top: 8px;
+  left: 17px;
   @include numberCounter;
 }
 
@@ -124,11 +139,16 @@ body {
     font-weight: 600;
   }
   .wrp-bonus-reviews {
-    margin-right: 11px;
+    padding-left: 46px;
+    margin-right: 9px;
   }
 }
 
 @media (max-width: 1220px) {
+  .wrp-cont{
+    // padding-left: 24px;
+    padding-right: 0;
+  }
   .wrp-answer-reviews {
     display: none;
   }
