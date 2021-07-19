@@ -356,16 +356,11 @@ body {
 
 .reviews-product-wrp > p {
   max-width: 220px;
+  padding-right: 10px;
 }
 
 .wrp-bonus-reviews {
   position: relative;
-}
-
-.wrp-bonus-reviews > img {
-  position: absolute;
-  top: 0;
-  left: -2px;
 }
 
 .wrp-answer-reviews {
@@ -440,7 +435,6 @@ body {
     font-weight: 600;
   }
   .wrp-bonus-reviews {
-    padding-left: 46px;
     margin-right: 9px;
   }
 }
@@ -456,7 +450,7 @@ body {
     display: block;
   }
   .reviews-list-wrp {
-    width: 345px;
+    width: 363px;
     padding: 14px 9px;
   }
   .wrp-reviews {
@@ -484,7 +478,7 @@ body {
     font-size: 16px;
   }
   .reviews-wrp-title {
-    padding: 0 15px;
+    padding: 0;
   }
 }
 
