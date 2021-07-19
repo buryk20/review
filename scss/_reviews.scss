@@ -39,7 +39,7 @@ body {
   @include wrpGeneral;
 }
 
-.wrp-cont {
+.wrp-cont-rev {
   margin-bottom: 10px;
   padding-right: 14px;
   // padding-left: 28px;
@@ -141,7 +141,7 @@ body {
 }
 
 @media (max-width: 1220px) {
-  .wrp-cont{
+  .wrp-cont-rev{
     // padding-left: 24px;
     padding-right: 0;
   }
